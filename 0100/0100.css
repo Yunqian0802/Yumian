@@ -1,0 +1,152 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#song{
+    font-size: 100px;
+    font-family: STXingkai;
+    font-weight: 400;
+}
+.time-container{
+    width:100%;
+    height:900px;
+    background:linear-gradient(to top right,rgb(255, 255, 255),rgb(132, 200, 255),rgb(116, 184, 251),rgb(14, 143, 218),rgb(16, 116, 204),rgb(17, 17, 168));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#time-header{
+    position: relative;
+    font-size:100px ;
+    font-weight: 500;
+    font-family:STXingkai ;
+   color:#fff;
+}
+@keyframes color-change{
+   
+   25%{
+    color:rgb(13, 139, 208);
+   }
+    50%{
+        color: rgb(34, 96, 162);
+    }
+    75%{color:rgb(13, 139, 208);
+       }
+   100%{
+        color: #fff;
+    }
+}
+#time-header:hover{
+  animation: color-change 5s ease-in-out 0s infinite;
+}
+.timer-display{
+    font-family:STXingkai ;
+    color:#fff;
+    position: relative;
+    font-size:90px ;
+    font-weight: 500;
+}
+.timer-display span{
+    font-size: 100px;
+    font-family: STKaiti;
+}
+@keyframes font-change{
+    25%{
+        color:rgb(13, 139, 208);
+       }
+        50%{
+            color: rgb(34, 96, 162);
+        }
+        75%{color:rgb(13, 139, 208);
+           }
+       100%{
+            color: #fff;
+        }
+}
+.timer-display span:hover{
+   animation: font-change 3s ease-in-out 0.1s infinite;
+  }
+  .decorations{
+    display: flex;
+    flex-direction: row;
+    width:100% ;
+    
+  }
+  
+.pic1 img{
+    transition: 0.3s;
+    opacity:0.8 ;
+    position: absolute;
+    left:10%;
+    border-radius: 60px;
+    width:150px;
+    height:150px;
+    border:5px solid #710000;
+    cursor: pointer; /*点击指示*/
+}
+
+.pic2 img{
+    transition: 0.5s;
+    opacity:0.8 ;
+    position: absolute;
+    right:10%;
+    border-radius: 60px;
+    width:150px;
+    height:150px;
+    border:5px solid rgb(0, 0, 92);
+    cursor: pointer; 
+}
+#p1{
+    width:auto;
+position: absolute;
+left:10%;
+    float: left;
+    font-family: FZShuTi;
+    color: #710000;
+}
+#p2{position: absolute;
+    width:auto;
+right:7%;
+    float: right;
+    font-family: STXingkai;
+    color: rgb(0, 0, 92);
+}
+.decorations p{
+    position: relative;
+    bottom: -160px;
+    
+}
+.decorations img:hover{
+    box-shadow: 0 8px 8px 0 rgba(48, 106, 176, 0.773);
+    transform: translate(0,-10px);
+}
+
+
+  
+.pic3 img {  
+    transition: 0.3s;  
+    opacity: 1;  
+    position: absolute;  
+    top: 10%;   
+    left:5%;  
+     transform: translate(-50%, -50%);/*保持居中*/
+    border-radius: 50%;  
+    width: 150px;  
+    height: 150px;  
+    border: 5px solid rgb(116, 184, 251);  
+    cursor: pointer; 
+}  
+  
+@keyframes rotate {  
+    from {  
+        transform: translate(-50%, -50%) rotate(0deg);  
+    }  
+    to {  
+        transform: translate(-50%, -50%) rotate(360deg);  
+    }  
+}  
+  
+.rotate {  
+    animation: rotate 6s linear infinite;  
+}
